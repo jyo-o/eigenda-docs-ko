@@ -1,0 +1,9 @@
+[book]
+authors = ["Eigen Labs (translated to Korean)"]
+language = "ko"
+src = "src"
+title = "EigenDA Core Concepts (한국어)"
+
+[output.html]
+mathjax-support = true
+git-repository-url = "https://github.com/Layr-Labs/eigencloud-docs"
