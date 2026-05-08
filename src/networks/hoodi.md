@@ -1,5 +1,5 @@
 
-# Hoodi
+# Hoodi (오퍼레이터 테스트넷)
 
 EigenDA Hoodi testnet은 operator용 EigenDA testnet이다.
 

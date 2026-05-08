@@ -1,5 +1,5 @@
 
-# EigenDA Data Structures
+# EigenDA 데이터 구조체 (Data Structures)
 
 ## BlobKey (Blob Header Hash)
 

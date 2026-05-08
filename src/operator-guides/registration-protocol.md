@@ -1,5 +1,5 @@
 
-# Registration Protocol 상세
+# 등록 프로토콜 상세 (Registration Protocol)
 
 이 페이지는 EigenDA operator의 등록 절차에 대한 추가 배경 정보를 담고 있다. 이 절에서 설명하는 단계들은 [registration instructions](./run-a-node/registration/)에서 참조하는 스크립트가 자동으로 수행한다.
 

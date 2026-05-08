@@ -1,5 +1,5 @@
 
-# Security FAQs
+# 보안 FAQ (Security FAQs)
 
 이 문서의 목적은 Ethereum L2로서 DA solution을 사용할 때 자주 묻는 질문을 정리하고 보안 trade-off를 더 잘 이해하도록 돕는 것이다. 본 문서는 DA에 대한 종합적 보안 평가를 다루지는 않는다.
 

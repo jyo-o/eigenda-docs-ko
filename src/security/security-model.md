@@ -1,5 +1,5 @@
 
-# Security Model
+# 보안 모델 (Security Model)
 
 ## Introduction
 

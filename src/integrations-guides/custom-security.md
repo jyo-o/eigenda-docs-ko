@@ -1,5 +1,5 @@
 
-# Custom Quorum과 Threshold
+# Custom Quorum과 Threshold (Custom Security)
 
 EigenDA는 사용자가 보안 보장을 유지하면서 자신만의 data availability solution을 맞춤화할 수 있도록 한다.
 

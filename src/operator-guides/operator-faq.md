@@ -1,5 +1,5 @@
 
-# EigenDA Operator FAQ
+# EigenDA Operator FAQ (자주 묻는 질문)
 
 #### static IP/DNS 주소가 있는데, 이 주소로 EigenDA에 등록하고 고정하려면 어떻게 하나?
 

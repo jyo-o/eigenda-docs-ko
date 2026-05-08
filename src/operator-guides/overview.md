@@ -1,4 +1,4 @@
-# 개요 (Overview)
+# 오퍼레이터 가이드 개요 (Operator Overview)
 
 이 가이드는 EigenDA 네트워크에 node를 설치하는 데 필요한 단계를 담고 있다.
 testnet은 mainnet에 배포하기 전에 node를 운영하기 위한 운영적·성능적 요구사항을 시험하는 데 사용된다. testnet은 지속적인 stress test를 거치며, node software와 기타 네트워크 컴포넌트가 자주 갱신된다. software 및 문서 업데이트를 정기적으로 확인하는 것이 중요하다.

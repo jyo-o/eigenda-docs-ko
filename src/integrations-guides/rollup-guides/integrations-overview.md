@@ -1,4 +1,4 @@
-# Secure Integration Overview
+# Secure Integration 개요 (Overview)
 
 이 문서는 안전한 EigenDA 통합이 어떤 모습인지 정리하여, rollup 엔지니어가 EigenDA 통합이 자신들의 tech stack과 보안 모델에 어떤 영향을 미치는지 잘 이해할 수 있도록 한다. 자세한 내용은 [EigenDA V2 integration spec](https://layr-labs.github.io/eigenda/integration/spec/6-secure-integration.html#certblobtiming-validation)을 참고한다.
 

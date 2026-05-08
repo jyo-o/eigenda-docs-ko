@@ -1,4 +1,4 @@
-# EigenDA Proxy
+# EigenDA Proxy (프록시)
 
 ## 개요
 

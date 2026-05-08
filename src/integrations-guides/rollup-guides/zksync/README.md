@@ -1,4 +1,4 @@
-# ZK Stack 과 EigenDA
+# ZKsync 통합 (ZK Stack & EigenDA)
 
 ZK Stack은 ZKsync의 rollup 프레임워크다. ZK Stack의 [validium architecture](https://docs.zksync.io/zk-stack/running/validium)에 따라 [EigenDA Client](https://github.com/matter-labs/zksync-era/tree/main/core/node/da_clients/src/eigen)를 구현했다. 우리의 통합은 현재 [Stage 1](#stage-1) 이고 [Stage 2](#stage-2)를 향해 작업 중이다.
 

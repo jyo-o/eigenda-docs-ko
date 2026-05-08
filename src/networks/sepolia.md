@@ -1,5 +1,5 @@
 
-# Sepolia
+# Sepolia (테스트넷)
 
 EigenDA Sepolia testnet은 통합용으로 현재 사용되는 EigenDA testnet이다.
 

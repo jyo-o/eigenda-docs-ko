@@ -1,5 +1,5 @@
 
-# Metrics 및 모니터링
+# Metrics 및 모니터링 (Metrics & Monitoring)
 
 다음은 Prometheus, Grafana, Node exporter stack을 실행하는 quickstart 가이드다.
 

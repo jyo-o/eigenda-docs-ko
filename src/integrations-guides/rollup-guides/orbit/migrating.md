@@ -1,5 +1,5 @@
 
-# Orbit Chain을 EigenDA 사용하도록 마이그레이션
+# Orbit Chain을 EigenDA로 마이그레이션 (Migrating)
 
 다음은 native Arbitrum DA(즉 Ethereum calldata, 4844 blob, anytrust)를 사용하는 vanilla Arbitrum sequencer를, EigenDA를 통해 high throughput과 저비용을 달성하는 sequencer로 마이그레이션하는 절차다. parent chain 컨텍스트(예: Ethereum, Arbitrum One)와 무관하게 절차는 동일하지만, 배포 깊이에 따른 보안 [영향](overview.md#eth-l2-vs-l3-deployments)은 달라진다.
 

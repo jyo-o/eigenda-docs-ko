@@ -1,4 +1,4 @@
-# EigenDA Glossary (용어집)
+# EigenDA 용어집 (Glossary)
 
 EigenDA 프로토콜의 핵심 컴포넌트와 관련 용어 정의를 제공한다.
 

@@ -2,7 +2,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Docker로 노드 실행하기
+# Docker로 노드 실행하기 (Run with Docker)
 
 Operator Setup Repository에는 docker와 docker compose로 EigenDA node를 손쉽게 운영할 수 있는 다양한 템플릿이 포함되어 있다. 다른 환경을 원하는 operator는 이 docker-compose 기반 setup을 본인 커스텀 setup의 템플릿으로 활용할 수 있다.
 

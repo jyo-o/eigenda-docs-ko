@@ -1,5 +1,5 @@
 
-# Mainnet (메인넷)
+# 메인넷 (Mainnet)
 
 ## Quick Links (바로가기)
 

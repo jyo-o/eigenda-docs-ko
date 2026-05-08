@@ -1,5 +1,5 @@
 
-# Payments
+# 결제 시스템 (Payments)
 
 Payments 시스템은 EigenDA와의 사용자 상호작용을 간소화하며, 네트워크 bandwidth를 관리하는 명확하고 유연한 옵션을 제공한다. EigenDA는 두 가지 유연한 payment modality를 지원한다.
 

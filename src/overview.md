@@ -1,5 +1,5 @@
 
-# What is EigenDA?
+# EigenDA란? (What is EigenDA?)
 
 EigenDA는 Eigen Labs가 개발하고 EigenLayer 위에 구축된 data availability 프로토콜이다. rollup용으로는 Mainnet과 Sepolia testnet에서, operator용으로는 Hoodi에서 가동 중이다.
 

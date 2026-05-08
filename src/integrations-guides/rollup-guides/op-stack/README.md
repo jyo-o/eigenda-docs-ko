@@ -1,5 +1,5 @@
 
-# OP Stack 과 EigenDA
+# OP Stack 통합 (OP Stack & EigenDA)
 
 [OP Stack](https://github.com/ethereum-optimism/optimism)은 [Optimism](https://l2beat.com/scaling/projects/op-mainnet) rollup을 구동하는 software 컴포넌트 집합으로, 독립적으로 배포해 third-party rollup을 운영할 수도 있다.
 

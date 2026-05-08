@@ -1,5 +1,5 @@
 
-# Arbitrum Orbit 배포
+# Arbitrum Orbit 배포 (Deployment)
 
 [Arbitrum Orbit](https://docs.arbitrum.io/launch-orbit-chain/orbit-gentle-introduction)은 [Offchain Labs](https://www.offchainlabs.com/)가 개발한 Rollup Development Kit (RDK)로, *Arbitrum One* 과 *Arbitrum Nova* 를 구동하는 동일한 software를 사용해 rollup 개발자가 자신만의 rollup을 만들 수 있도록 한다.
 

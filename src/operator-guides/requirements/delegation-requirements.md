@@ -2,7 +2,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Delegation 요구사항
+# Delegation 요구사항 (Delegation Requirements)
 
 EigenDA operator가 되려면 먼저 EigenLayer operator로 등록한 뒤 stake 요구사항을 충족해야 한다. 이 요구사항은 quorum 단위로 평가되며, 각 quorum의 가중치 기준으로 산정된다:
 

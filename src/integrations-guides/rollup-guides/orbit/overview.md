@@ -1,4 +1,4 @@
-# Arbitrum Orbit 개요
+# Arbitrum Orbit 개요 (Overview)
 
 다음은 EigenDA를 활용한 Arbitrum에서 fraud proof와 high throughput을 안전하게 가능하게 하기 위해 적용한 핵심 변경사항에 대한 기술적 정리다. 핵심 caveat과 feature도 함께 다룬다.
 

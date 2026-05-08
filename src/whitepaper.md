@@ -1,5 +1,5 @@
 
-# Whitepaper
+# 백서 (Whitepaper)
 
 EigenDA: The Hyperscale Verifiable Data Availability Layer ([PDF](https://docs.eigencloud.xyz/pdf/EigenDA_Whitepaper.pdf))
 

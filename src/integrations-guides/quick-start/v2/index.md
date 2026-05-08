@@ -1,5 +1,5 @@
 
-# EigenDA Payment 및 Data Dispersal Guide
+# EigenDA Payment 및 Data Dispersal 가이드 (Quick Start V2)
 이 가이드는 Sepolia에서 EigenDA를 사용해 payment를 설정하고 data를 dispersal하는 절차를 안내한다.
 
 :::tip

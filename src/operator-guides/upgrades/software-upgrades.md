@@ -4,7 +4,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 
-# Software 업그레이드
+# Software 업그레이드 (Software Upgrades)
 
 EigenDA Operator software 업데이트는 다음 채널에서 확인한다:
 - [EigenLayer Telegram](https://t.me/EigenCloudSupp)

@@ -3,7 +3,7 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Operator 등록하기
+# Operator 등록하기 (Registration)
 
 Operator는 EigenDA의 한 개 이상 quorum에 등록되기 전까지는 EigenDA disperser로부터 트래픽을 받지 않는다.
 [delegation 요구사항](../requirements/delegation-requirements/)에서 다룬 것처럼, EigenDA quorum에 등록하려면 operator가 [EigenLayer operator로 등록](../../../eigenlayer/operators/howto/registeroperators/operator-installation.md)되어 있어야 하고, 등록하려는 각 quorum에 최소량의 stake가 위임되어 있어야 한다.
