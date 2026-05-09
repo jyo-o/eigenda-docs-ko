@@ -10,7 +10,7 @@ EigenDA 네트워크는 각 quorum에서 quorum weight 기준 상위 N=200 opera
 
 quorum weight 기준 최소 operator 정보를 smart contract에 유지하는 것은, onchain에서 sorting 또는 priority queue를 유지하는 데 드는 높은 연산 비용과 복잡도 때문에 현실적이지 않다. 이를 관리하기 위해, 네트워크는 인가된 off-chain churn approver와 일련의 onchain 검증의 조합을 사용한다.
 
-### EigenDA Churn Approver
+### EigenDA Churn Approver (처닝 승인자)
 
 churn approver는 등록 contract에 quorum weight 기준 가장 작은 operator 정보를 제공하는 신뢰된 서비스를 수행한다.
 

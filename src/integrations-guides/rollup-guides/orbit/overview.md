@@ -2,7 +2,7 @@
 
 다음은 EigenDA를 활용한 Arbitrum에서 fraud proof와 high throughput을 안전하게 가능하게 하기 위해 적용한 핵심 변경사항에 대한 기술적 정리다. 핵심 caveat과 feature도 함께 다룬다.
 
-## Runbook
+## Runbook (운영 절차)
 
 Core Arbitrum은 다양한 software repository와 프로그래밍 언어로 매우 복잡하게 구성되어 있다. 핵심 시스템 흐름을 더 잘 풀어내기 위해, 핵심 테스트 및 시스템 절차를 설명하는 운영 개발자용 [runbook](https://eigen-labs.notion.site/Arbitrum-x-EigenDA-Developer-Runbook-12466062c1a7495ebc1d803169c37644?pvs=4)을 만들었다.
 

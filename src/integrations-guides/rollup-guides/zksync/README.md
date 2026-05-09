@@ -11,12 +11,12 @@ ZK Stack은 ZKsync의 rollup 프레임워크다. ZK Stack의 [validium architect
 
 전반적으로 [transaction lifecycle](https://docs.zksync.io/zksync-protocol/rollup/transaction-lifecycle)은 변경되지 않으며, 데이터(압축된 state diff)가 EigenDA에 제출되고 DACert가 L1에 제출된다는 점만 다르다.
 
-### Stage 1
+### Stage 1 (1단계)
 > DA 레이어로 데이터를 보내기만 하고 그 inclusion은 검증하지 않는 Validium
 
 ZK Stack은 sequencer를 sidecar 없이 단일 binary로 운영하는 것을 선호한다. 따라서 우리의 ZK Stack 통합은 [EigenDA Proxy](../../eigenda-proxy/eigenda-proxy.md)를 사용하지 않는다. 대신 우리의 Rust [eigenda-client](https://github.com/Layr-Labs/eigenda-client-rs)를 사용한다. ZKSync-Era repo 내부의 [EigenDA Client](https://github.com/matter-labs/zksync-era/tree/f05fffda72393fd86c752e88b7192cc8e0c30b68/core/node/da_clients/src/eigen) 래퍼는 [필요한 trait](https://docs.zksync.io/zk-stack/running/validium#server-related-details)의 두 method `dispatch_blob` 과 `get_inclusion_data` 를 구현한다.
 
-### Stage 2
+### Stage 2 (2단계)
 > DA 레이어로 데이터를 보내고 verification bridge나 zk-proof로 L1 상에서 그 inclusion을 검증하는 Validium
 
 stage 2 모델에서는 ZK Stack의 prover가 AltDA에 종속되지 않도록, Validium 아키텍처가 EigenDA에 압축된 state diff가 inclusion되었음을 L1에 증명하는 sidecar prover 사용을 강제한다. 이 sidecar prover로는 Risc0를 사용한다.

@@ -35,7 +35,7 @@ EigenDA Hoodi testnet은 operator용 EigenDA testnet이다.
 
 ![](../assets/eigenda/eigenda-directory-etherscan.png)
 
-## Quorum
+## Quorum (쿼럼)
 
 | Quorum Number | Stake Minimum | Token |
 | --- | --- | --- |

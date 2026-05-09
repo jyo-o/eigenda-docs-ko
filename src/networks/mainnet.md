@@ -34,7 +34,7 @@
 
 ![](../assets/eigenda/eigenda-directory-etherscan.png)
 
-## Quorum
+## Quorum (쿼럼)
 
 | Quorum Number | Token |
 | --- | --- |

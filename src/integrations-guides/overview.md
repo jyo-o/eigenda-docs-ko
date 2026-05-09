@@ -63,7 +63,7 @@ graph LR
 
 [EigenDA Proxy](eigenda-proxy/eigenda-proxy.md)는 EigenDA 네트워크와의 상호작용을 단순화하는 REST API를 제공하기 위해 띄울 수 있는 proxy server다. payment state, blob status polling, cert verification을 대신 처리해 주며, blob의 dispersal과 retrieval을 위한 단순한 인터페이스를 제공한다. 통합 절차가 크게 단순해지므로 대부분의 사용자에게는 proxy 사용을 권장한다.
 
-## Clients
+## Clients (클라이언트)
 
 통합 절차를 단순화하기 위해 [golang](https://github.com/Layr-Labs/eigenda/tree/master/api/clients) 및 [rust](https://github.com/Layr-Labs/eigenda-client-rs) 클라이언트를 제공한다.
 

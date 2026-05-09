@@ -3,7 +3,7 @@
 
 [Arbitrum Orbit](https://docs.arbitrum.io/launch-orbit-chain/orbit-gentle-introduction)은 [Offchain Labs](https://www.offchainlabs.com/)가 개발한 Rollup Development Kit (RDK)로, *Arbitrum One* 과 *Arbitrum Nova* 를 구동하는 동일한 software를 사용해 rollup 개발자가 자신만의 rollup을 만들 수 있도록 한다.
 
-## EigenDA Proxy
+## EigenDA Proxy (프록시)
 
 Arbitrum node는 안전한 통신과 낮은 코드 오버헤드를 위해 proxy를 통해 EigenDA와 통신한다. 자세한 내용은 [여기](../../eigenda-proxy/eigenda-proxy.md)에서 확인할 수 있다. 이 통합을 안전하게 사용하려면 proxy 인스턴스를 **반드시** 띄워야 한다. node config에서는 다음과 같이 표시된다:
 ```
@@ -85,6 +85,6 @@ nitro setup script node가 `error getting latest batch count: no contract code a
 - `/config/orbitSetupScriptConfig` 의 `SequencerInbox` 항목이 성공적으로 배포된 contract를 가리키는지
 - RPC provider가 충분히 안정적인지. 무료 및 공용 RPC provider 사용 시 일시적 오류는 흔하다.
 
-## Token Bridge
+## Token Bridge (토큰 브릿지)
 
 Arbitrum token bridge는 ERC-20 자산의 L1 ↔ L2 bridging을 지원하도록 활성화할 수 있다. token bridge는 기존 L1 ↔ L2 native bridge 위에 얹은 wrapper이므로 활성화에 별다른 변경이 필요 없다. 또한 Offchain labs가 유지하는 [기존](https://docs.arbitrum.io/build-decentralized-apps/reference/contract-addresses#token-bridge-smart-contracts) token bridge creator를 활용해 EigenDA 통합 inbox 위에 token bridge를 배포할 수 있다.

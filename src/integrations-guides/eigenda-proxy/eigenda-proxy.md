@@ -32,15 +32,15 @@ rollup 토폴로지의 다양한 행위자는 EigenDA와의 통신을 위해 다
 ## 권장 설정 유형
 다양한 proxy 설정을 통해 보안 조치 및 런타임 최적화를 다르게 적용할 수 있다. 설정 플래그는 [여기](https://github.com/Layr-Labs/eigenda/tree/master/api/proxy#eigenda-proxy-)에서 확인할 수 있다. 다양한 rollup node 행위자 유형별로 다음을 권장한다:
 
-### Batcher
+### Batcher (배처)
 EigenDA에 rollup batch를 제출하는 책임을 가진 권한 있는 역할은 다음 preset을 갖춰야 한다:
 - Certificate verification 활성화. rollup (stage = 0)이 쓰기에 대해 `EigenDAServiceManager` 와 DA cert를 비교 검증하지 않는다면, `ETH_CONFIRMATION_DEPTH` 를 합리적인 값(즉 >= 6)으로 설정해야 한다. 그렇지 않으면 Ethereum에서 reorg된 EigenDA blob batch header로 sequencer inbox에 certificate가 제출될 수 있다.
 
-### Bridge Validator
+### Bridge Validator (브릿지 밸리데이터)
 child --> parent chain withdraw bridge를 방어하거나 진행시키는 책임을 가진 validator는 다음과 같이 설정해야 한다:
 - Certificate verification 활성화
 - EigenDA retrieval 실패 시에도 blob을 읽을 수 있도록 보조 backend가 설정된 read fallback
 
-### Permissionless Verifier
+### Permissionless Verifier (무허가형 검증자)
 - Certificate verification 활성화
 - EigenDA에서의 데이터 read를 한 번만 수행하도록 cached backend provider 사용

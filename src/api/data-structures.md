@@ -1,7 +1,7 @@
 
 # EigenDA 데이터 구조체 (Data Structures)
 
-## BlobKey (Blob Header Hash)
+## BlobKey (블롭 키, Blob Header Hash)
 
 `blobKey` ( `blob_header_hash` 또는 `blobHeaderHash` 라고도 함)는 EigenDA 전반에서 사용되는 주요 식별자다. 32-byte 값으로 각 blob dispersal을 고유하게 식별하며, dispersal status 조회, blob retrieval, blob과 certificate를 연결할 때 사용한다.
 
@@ -92,13 +92,13 @@ blob key는 `BlobHeader` 의 hash다. `BlobCertificate` 는 그 header를 signat
 
 ![EigenDA V2 Batch Hashing Structure](../assets/eigenda/v2-batch-hashing-structure.png)
 
-## BlobHeader
+## BlobHeader (블롭 헤더)
 
 `BlobHeader` 는 blob dispersal에 대한 메타데이터를 담는다 — version, quorum number, blob commitment, payment 정보. `DisperseBlob` 요청에서 blob 데이터와 함께 제출한다.
 
 field 세부사항은 [protobuf 정의](https://github.com/Layr-Labs/eigenda/blob/master/api/proto/disperser/v2/disperser_v2.proto)를 참고한다.
 
-## BlobCertificate
+## BlobCertificate (블롭 인증서)
 
 `BlobCertificate` 는 `BlobHeader` 를 signature 및 relay key와 함께 묶는다. blob status 응답에서 찾을 수 있으며, blob availability 검증과 데이터 retrieval에 필요한 모든 것을 담고 있다.
 
