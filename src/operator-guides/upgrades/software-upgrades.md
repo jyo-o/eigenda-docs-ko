@@ -32,9 +32,10 @@ docker compose로 node를 운영 중이라면, 아래 단계에 따라 업그레
 
 release notes에 따라 `.env` 파일의 `MAIN_SERVICE_IMAGE` 를 최신 EigenDA 버전으로 갱신한다.
 
-:::info 
-업그레이드 시 따라야 할 특정 지침이 있다면 그 release의 release notes에 함께 안내된다. 서비스를 다시 시작하기 전에 GitHub의 최신 [release notes](https://github.com/Layr-Labs/eigenda-operator-setup/releases)를 확인하고 안내를 따른다.
-:::
+> ℹ️ **Info**
+>
+> 업그레이드 시 따라야 할 특정 지침이 있다면 그 release의 release notes에 함께 안내된다. 서비스를 다시 시작하기 전에 GitHub의 최신 [release notes](https://github.com/Layr-Labs/eigenda-operator-setup/releases)를 확인하고 안내를 따른다.
+
 
 #### Step 2: 최신 docker image 가져오기
 

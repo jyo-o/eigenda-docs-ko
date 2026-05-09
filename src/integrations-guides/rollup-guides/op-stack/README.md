@@ -76,9 +76,10 @@ $ just --list
 
 op-deployer를 사용하지 않고 이 파일을 직접 생성하는 경우, [keccak commitment](https://specs.optimism.io/experimental/alt-da.html#input-commitment-submission) 대신 generic commitment를 쓰도록 `da_commitment_type` 을 반드시 설정한다. 다른 값들은 의미는 없지만 어떤 값이든 설정되어 있어야 한다.
 
-:::note
-batch 파라미터를 설정할 때, encoding 오버헤드와 비용 영향을 이해하기 위해 [batch sizing reference](https://github.com/Layr-Labs/eigenda/blob/master/encoding/utils/codec/README.md)를 참고한다.
-:::
+> 📝 **Note**
+>
+> batch 파라미터를 설정할 때, encoding 오버헤드와 비용 영향을 이해하기 위해 [batch sizing reference](https://github.com/Layr-Labs/eigenda/blob/master/encoding/utils/codec/README.md)를 참고한다.
+
 
 ### EigenDA Proxy 배포
 

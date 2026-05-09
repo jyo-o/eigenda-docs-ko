@@ -6,9 +6,10 @@ payload를 disperse하고 retrieve하는 방법은 세 가지가 있다:
 2. [golang](https://github.com/Layr-Labs/eigenda/blob/master/api/clients/disperser_client.go) 또는 [rust](https://github.com/Layr-Labs/eigenda-client-rs) 클라이언트를 gRPC API 및 onchain 인터페이스와 함께 사용한다.
 3. gRPC API 및 onchain 인터페이스와 함께 사용할 자체 클라이언트를 직접 작성한다.
 
-:::note
-고급 사용 사례에서는 클라이언트를 직접 사용하는 방식(즉 위 옵션 2 또는 3)이 필요할 수 있다. 예를 들어 ZKsync는 [ZK Stack](rollup-guides/zksync/README.md) sequencer를 단일 binary로 유지하고 싶었고 proxy를 위한 sidecar 프로세스를 띄우는 것을 원하지 않았다. 그래서 자신의 DA dispatcher 코드에 우리의 rust 클라이언트를 직접 통합했다. 대부분의 사용자에게는 EigenDA proxy 사용을 권장한다. [Arbitrum Nitro](rollup-guides/orbit/overview.md)와 [Op Stack](rollup-guides/op-stack/README.md) 통합도 이 방식으로 동작한다.
-:::
+> 📝 **Note**
+>
+> 고급 사용 사례에서는 클라이언트를 직접 사용하는 방식(즉 위 옵션 2 또는 3)이 필요할 수 있다. 예를 들어 ZKsync는 [ZK Stack](rollup-guides/zksync/README.md) sequencer를 단일 binary로 유지하고 싶었고 proxy를 위한 sidecar 프로세스를 띄우는 것을 원하지 않았다. 그래서 자신의 DA dispatcher 코드에 우리의 rust 클라이언트를 직접 통합했다. 대부분의 사용자에게는 EigenDA proxy 사용을 권장한다. [Arbitrum Nitro](rollup-guides/orbit/overview.md)와 [Op Stack](rollup-guides/op-stack/README.md) 통합도 이 방식으로 동작한다.
+
 
 아래 다이어그램은 EigenDA disperser와 인터페이스하는 다양한 방법을 보여준다.
 

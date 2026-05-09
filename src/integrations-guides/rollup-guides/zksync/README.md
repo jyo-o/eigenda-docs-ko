@@ -75,9 +75,10 @@ da_client:
   blob_version: 0
 ```
 
-:::note
-batching 파라미터 설정 시, encoding 오버헤드와 비용 영향을 이해하기 위해 [batch sizing reference](https://github.com/Layr-Labs/eigenda/blob/master/encoding/utils/codec/README.md)를 참고한다.
-:::
+> 📝 **Note**
+>
+> batching 파라미터 설정 시, encoding 오버헤드와 비용 영향을 이해하기 위해 [batch sizing reference](https://github.com/Layr-Labs/eigenda/blob/master/encoding/utils/codec/README.md)를 참고한다.
+
 
 dispersal 비용을 지불할 계정의 private key를 포함하도록 `etc/env/file_based/secrets.yaml` 도 수정해야 한다. 다음 필드를 추가한다:
 

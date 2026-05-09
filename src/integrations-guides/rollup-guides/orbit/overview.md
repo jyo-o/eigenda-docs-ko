@@ -42,9 +42,10 @@ batch poster config 변경은 모든 batch poster 인스턴스에 일괄 적용�
         }
     }
 ```
-:::note
-batch 파라미터 설정 시, encoding 오버헤드와 비용 영향을 이해하기 위해 [batch sizing reference](https://github.com/Layr-Labs/eigenda/blob/master/encoding/utils/codec/README.md)를 참고한다.
-:::
+> 📝 **Note**
+>
+> batch 파라미터 설정 시, encoding 오버헤드와 비용 영향을 이해하기 위해 [batch sizing reference](https://github.com/Layr-Labs/eigenda/blob/master/encoding/utils/codec/README.md)를 참고한다.
+
 
 **Failover 활성화**
 

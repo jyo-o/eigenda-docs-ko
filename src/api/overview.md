@@ -7,9 +7,10 @@ EigenDA Disperser는 다음 기능을 제공하는 API를 제공한다:
 * EigenDA 네트워크에 blob dispersal.
 * [유연한 결제 방식: on-demand 및 reserved bandwidth](https://docs.eigencloud.xyz/products/eigenda/core-concepts/payments).
 
-:::note
-EigenDA 네트워크는 핵심 data availability 보장의 일부로, blob retrieval을 위해 EigenDA validator와의 직접 통신을 지원한다.
-:::
+> 📝 **Note**
+>
+> EigenDA 네트워크는 핵심 data availability 보장의 일부로, blob retrieval을 위해 EigenDA validator와의 직접 통신을 지원한다.
+
 
 Disperser API의 low level 명세는 [disperser.proto](https://github.com/Layr-Labs/eigenda/blob/master/api/proto/disperser/v2/disperser_v2.proto)다. 이 문서의 목표는 이 명세를 더 높은 수준에서 설명하는 것이다.
 
@@ -24,9 +25,10 @@ EigenDA Disperser는 다음 endpoint를 노출한다:
 * `GetBlobCommitment()`
 * `GetPaymentStateForAllQuorums()`
 
-:::note
-`GetPaymentSate()` 는 deprecated되었다. `GetPaymentStateForAllQuorums()` 를 사용한다.
-:::
+> 📝 **Note**
+>
+> `GetPaymentSate()` 는 deprecated되었다. `GetPaymentStateForAllQuorums()` 를 사용한다.
+
 
 ### Blob Dispersal Lifecycle (라이프사이클)
 
@@ -44,13 +46,15 @@ graph TD;
     C -->|15 days elapses since dispersal completion| D[Blob Expired];
 ```
 
-:::note
-`GetBlobStatus()` 응답에는 relay key가 포함된다. 현재 relay URL을 hard coding하지 말고, [onchain의 `EigenDARelayRegistry`](https://github.com/Layr-Labs/eigenda/blob/a6e6a31474caf73f2994301567dc0e64d6ac2e80/contracts/src/core/EigenDARelayRegistry.sol#L32) contract에서 relay URL을 가져온다.
-:::
+> 📝 **Note**
+>
+> `GetBlobStatus()` 응답에는 relay key가 포함된다. 현재 relay URL을 hard coding하지 말고, [onchain의 `EigenDARelayRegistry`](https://github.com/Layr-Labs/eigenda/blob/a6e6a31474caf73f2994301567dc0e64d6ac2e80/contracts/src/core/EigenDARelayRegistry.sol#L32) contract에서 relay URL을 가져온다.
 
-:::tip
-여기서는 주요 API endpoint에 대한 narrative 수준의 설명을 제공한다. field 단위 자세한 API 문서는 [repo](https://github.com/Layr-Labs/eigenda/blob/master/api/proto/disperser/v2/disperser_v2.proto)를 참고한다.
-:::
+
+> 💡 **Tip**
+>
+> 여기서는 주요 API endpoint에 대한 narrative 수준의 설명을 제공한다. field 단위 자세한 API 문서는 [repo](https://github.com/Layr-Labs/eigenda/blob/master/api/proto/disperser/v2/disperser_v2.proto)를 참고한다.
+
 
 ## Blob Retrieval (블롭 조회)
 
@@ -66,9 +70,10 @@ blob은 다음 두 곳에서 retrieve할 수 있다:
  * `GetBlob()`
  * `GetChunks()`
 
-:::tip
-여기서는 주요 API endpoint에 대한 narrative 수준의 설명을 제공한다. field 단위 자세한 API 문서는 현재 release에 맞춘 [repo](https://github.com/Layr-Labs/eigenda/blob/master/api/proto/relay/relay.proto)를 참고한다.
-:::
+> 💡 **Tip**
+>
+> 여기서는 주요 API endpoint에 대한 narrative 수준의 설명을 제공한다. field 단위 자세한 API 문서는 현재 release에 맞춘 [repo](https://github.com/Layr-Labs/eigenda/blob/master/api/proto/relay/relay.proto)를 참고한다.
+
 
 ### Validator Endpoint (밸리데이터 엔드포인트)
 
@@ -77,6 +82,7 @@ EigenDA Node는 다음 retrieval endpoint를 노출한다:
 * `GetBlobHeader()`
 * `NodeInfo()`
 
-:::tip
-여기서는 주요 API endpoint에 대한 narrative 수준의 설명을 제공한다. field 단위 자세한 API 문서는 [repo](https://github.com/Layr-Labs/eigenda/blob/master/api/proto/node/node.proto)를 참고한다.
-:::
+> 💡 **Tip**
+>
+> 여기서는 주요 API endpoint에 대한 narrative 수준의 설명을 제공한다. field 단위 자세한 API 문서는 [repo](https://github.com/Layr-Labs/eigenda/blob/master/api/proto/node/node.proto)를 참고한다.
+

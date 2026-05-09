@@ -49,7 +49,7 @@ DAS는 일반적으로 DA 프로토콜에 대해 두 가지 목적을 가진다.
 
 ## restaked ETH는 EigenDA에 어떤 보안을 제공하는가?
 
-EigenDA는 \$8.8B를 초과하는 ETH restake quorum에 의해 추가로 validate된다. 즉, 시스템을 공격하려면 colluding operator 집합이 ETH re-staker로부터 \$4.4B*를 초과하는 delegation을 받아야 한다는 의미다.
+EigenDA는 $8.8B를 초과하는 ETH restake quorum에 의해 추가로 validate된다. 즉, 시스템을 공격하려면 colluding operator 집합이 ETH re-staker로부터 $4.4B*를 초과하는 delegation을 받아야 한다는 의미다.
 
 ## EigenDA는 KZG Polynomial Commitment를 무엇에 사용하는가?
 

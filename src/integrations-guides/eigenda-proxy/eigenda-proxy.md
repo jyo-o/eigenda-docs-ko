@@ -4,9 +4,10 @@
 
 EigenDA proxy는 EigenDA 네트워크와의 통신을 위해 rollup node cluster의 일부로 실행되는 sidecar server다.
 
-:::note
-전체 설정 세부사항은 [EigenDA proxy Readme](https://github.com/Layr-Labs/eigenda/tree/master/api/proxy#eigenda-proxy-)를 참고한다.
-:::
+> 📝 **Note**
+>
+> 전체 설정 세부사항은 [EigenDA proxy Readme](https://github.com/Layr-Labs/eigenda/tree/master/api/proxy#eigenda-proxy-)를 참고한다.
+
 
 ### Rollup 상호작용 다이어그램 예시
 아래는 rollup stack 전반에서 다양한 네트워크 역할(즉 sequencer, verifier)이 proxy를 어떻게 사용하는지 보여주는 high level flow다. parent chain inbox 또는 safe head로부터 직접 sync하려는 EigenDA 통합 rollup node는 이 서비스를 반드시 실행해야 한다.
@@ -23,9 +24,10 @@ rollup 토폴로지의 다양한 행위자는 EigenDA와의 통신을 위해 다
 
 *예: Arbitrum에는 parent chain의 rollup assertion chain에 state claim을 게시하는 `MakeNode` validator가 있다. 챌린지 발생 시, asserter/challenger 양 측은 자신들이 bisection할 WAVM 실행 trace를 계산하기 위해 proxy로부터 읽은 batch로 local pre-image store를 미리 채워야 한다.*
 
-:::note
-사용에 필요한 payment 설정은 이 [Quick Start](../quick-start/v2/index.md)를 참고한다.
-:::
+> 📝 **Note**
+>
+> 사용에 필요한 payment 설정은 이 [Quick Start](../quick-start/v2/index.md)를 참고한다.
+
 ## 기술 세부사항
 [EigenDA Proxy](https://github.com/Layr-Labs/eigenda/tree/master/api/proxy#eigenda-proxy-)는 [high-level EigenDA client](https://github.com/Layr-Labs/eigenda/blob/master/api/clients/eigenda_client.go)를 HTTP server로 감싸며, blob을 읽고 쓸 때 추가 검증 작업을 수행해 EigenDA disperser 서비스에 대한 모든 신뢰 가정을 제거한다. EigenDA Proxy는 추가 보안 기능(예: read fallback)과 선택적 성능 최적화(예: caching)도 제공한다. 서비스 빌드 및 실행 방법은 [여기](https://github.com/Layr-Labs/eigenda/tree/master/api/proxy#eigenda-proxy-)에서 확인할 수 있다.
 

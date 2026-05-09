@@ -2,32 +2,36 @@
 # EigenDA Payment 및 Data Dispersal 가이드 (Quick Start V2)
 이 가이드는 Sepolia에서 EigenDA를 사용해 payment를 설정하고 data를 dispersal하는 절차를 안내한다.
 
-:::tip
-이 가이드는 go client를 사용해 payment를 설정하고 data를 dispersal한다. EigenDA API와 통합하는 다른 방법에 대한 정보는 [Overview](../../overview.md)를 참고한다.
-:::
+> 💡 **Tip**
+>
+> 이 가이드는 go client를 사용해 payment를 설정하고 data를 dispersal한다. EigenDA API와 통합하는 다른 방법에 대한 정보는 [Overview](../../overview.md)를 참고한다.
+
 
 ## On-Demand Data Dispersal (온디맨드 데이터 분산 전송)
 ### Onchain 설정
-:::info Pre-Requisites
-- Ethereum Sepolia testnet의 ETH
-- [Foundry](https://book.getfoundry.sh/getting-started/installation) 설치
-- Sepolia용 RPC URL
-- transaction용 Private key
-:::
+> ℹ️ **Info** — Pre-Requisites
+>
+> - Ethereum Sepolia testnet의 ETH
+> - [Foundry](https://book.getfoundry.sh/getting-started/installation) 설치
+> - Sepolia용 RPC URL
+> - transaction용 Private key
+
 
 네트워크에 dispersal하려면 차감할 잔액이 필요하다. EigenDA의 Payment Module에 대해 더 알고 싶다면 [여기](../../../core-concepts/payments.md) 참고 문서를 확인한다.
 
 먼저 Ethereum Sepolia testnet에 ETH가 있는지 확인하고, Payment Vault에 deposit한다. 이후 EigenDA 요청에 따른 비용은 여기서 차감된다.
 
 먼저 Foundry의 `cast` 를 사용해 payment vault에 deposit한다.
-:::note Installation
-Foundry를 설치하지 않았다면 [여기](https://book.getfoundry.sh/getting-started/installation)의 설치 명령을 따른다.
-:::
+> 📝 **Note** — Installation
+>
+> Foundry를 설치하지 않았다면 [여기](https://book.getfoundry.sh/getting-started/installation)의 설치 명령을 따른다.
+
 
 다음 명령은 Sepolia의 Payment Vault에 1 ETH를 deposit한다:
-:::note Deposits
-보낼 데이터의 양을 잘 산정한다. payment vault에 deposit된 자금은 환불되지 않는다.
-:::
+> 📝 **Note** — Deposits
+>
+> 보낼 데이터의 양을 잘 산정한다. payment vault에 deposit된 자금은 환불되지 않는다.
+
 
 ```bash
 cast send --rpc-url <YOUR_RPC_URL> \
@@ -75,9 +79,10 @@ import (
 ``` 
 
 #### 2. Disperser Client 생성
-:::note
-`signer` 는 deposit한 주소와 동일해야 한다.
-:::
+> 📝 **Note**
+>
+> `signer` 는 deposit한 주소와 동일해야 한다.
+
 ```Golang
 err := godotenv.Load()
 	if err != nil {

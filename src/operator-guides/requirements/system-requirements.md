@@ -32,9 +32,10 @@ operator의 **TWS**는 다음과 같이 계산된다.
 
 EigenDA 노드는 네트워크 저장 및 retrieval 작업을 따라잡기 위해 **반드시** 고성능 SSD 스토리지를 프로비저닝해야 한다. `PCIe 4.0 x4 M.2` 또는 `U.2 NVMe` 같은 enterprise grade SSD가 권장된다.
 
-:::warning
-적절한 성능을 유지하지 못하면 허용 불가능한 검증 latency가 발생하고 [자동 ejection](protocol-SLA/)이 일어난다.
-:::
+> ⚠️ **Warning**
+>
+> 적절한 성능을 유지하지 못하면 허용 불가능한 검증 latency가 발생하고 [자동 ejection](protocol-SLA/)이 일어난다.
+
 
 ---
 
@@ -65,13 +66,14 @@ Required Storage (TB) = TWS (%) * 1000
 예시: TWS 5%인 경우, 최대 throughput 용량을 지원하기 위해 50 TB를 프로비저닝한다.
 
 
-:::info
-위 공식은 다음 식에서 도출·간소화된 것이다.
+> ℹ️ **Info**
+>
+> 위 공식은 다음 식에서 도출·간소화된 것이다.
+>
+> ```
+> <Gross System Throughput(MB/s)> * <14 days in seconds> * <% stake>
+> ```
 
-```
-<Gross System Throughput(MB/s)> * <14 days in seconds> * <% stake>
-```
-:::
 
 ## 시스템 업그레이드 (System Upgrades)
 
